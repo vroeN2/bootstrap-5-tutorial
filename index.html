@@ -9,31 +9,27 @@
     <title>Raven Bootstrap - the Book</title>
 </head>
 <body>
-    <!-- margin & padding -->
-    <div class="m-1 p-1 bg-primary">small margin & padding</div>
-    <div class="m-5 p-5 bg-primary">large margin & padding</div>
-    <div class="my-3 px-5 bg-primary">margin in y dir, padding in x dir</div>
-    <div class="mt-3 mb-4 ps-5 pt-4 pe-2 pb-1 bg-primary">m & p for each direction</div>
-  
-    <!-- borders -->
-    <div class="m-3 p-3 border">default border</div>
-    <div class="m-3 p-3 border-top border-end">individual borders</div>
-    <div class="m-3 p-3 border-start border-success">border success colour</div>
-    <div class="m-3 p-3 border-start border-danger border-5">thicker border</div>
-    <div class="m-3 p-3 rounded border border-5">rounded corners</div>
-    <div class="m-3 p-3 rounded-pill border border-5">rounded corners</div>
-  
-    <!-- box shadow -->
-    <div class="m-3 p-3 shadow-sm">element with small shadow</div>
-    <div class="m-3 p-3 shadow">element with shadow</div>
-  
-    <!-- font weight -->
-    <p class="fw-bold">bold text</p>
-    <p class="fw-bolder">bolder text</p>
-    <p>normal text</p>
-    <p class="fw-light">light text</p>
-    <p class="fst-italic">italic text</p>
-    <p class="fst-italic fw-light">italic light text</p>
+    <!-- containers are pre-coded, uhm, containers, with fixed width values (value depends on container type) -->
+    <div class="container my-5">
+        <h2>normal container</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, alias. Quaerat deleniti placeat a corrupti ex iure iste, numquam consequuntur dolores praesentium, rem eos voluptas nesciunt debitis vero neque ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vitae impedit id accusamus, reiciendis doloremque explicabo porro voluptate, deleniti et maxime, perferendis recusandae nesciunt asperiores aliquid blanditiis possimus eum reprehenderit.</p>
+    </div>
+
+    <!-- this one always has 100% of page width -->
+    <div class="container-fluid">
+        <h2>fluid container</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid incidunt maxime distinctio impedit ut voluptatum. Magni quas, atque earum officia itaque, in repudiandae necessitatibus unde dolor officiis, quae laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odio iusto, quis dicta illo est dolorum. Corrupti ex non doloremque? Quis expedita totam, officiis minus autem ab? Aperiam, animi exercitationem.</p>
+    </div>
+
+    <div class="container-lg my-5">
+        <h2>100% width until lg screens, then container</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat officia, at quas dolorum exercitationem excepturi molestiae, modi reprehenderit deserunt quidem vero adipisci qui veritatis. Placeat quis eius explicabo. Quidem earum autem harum, debitis dolorum hic atque ut impedit repudiandae quas repellat provident! Ipsum dignissimos dolorum consequuntur hic at fuga totam laudantium. Fugiat eaque ad perspiciatis. Ratione magni quas quam?</p>
+    </div>
+
+    <div class="container-xl my-5">
+        <h2>100% width until xl screens, then container</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quidem quia ipsa quas libero, voluptatem cum esse expedita? Assumenda beatae blanditiis commodi ipsum est, at dolores minima tempora! Veniam sunt ex reiciendis totam omnis, voluptatem sit distinctio cumque aperiam vel suscipit ullam voluptate ipsa facilis quo asperiores voluptas. Totam, corrupti possimus est veritatis explicabo qui consectetur dolorem voluptate odio quia.</p>
+    </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
