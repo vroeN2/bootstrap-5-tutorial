@@ -9,27 +9,71 @@
     <title>Raven Bootstrap - the Book</title>
 </head>
 <body>
-    <!-- containers are pre-coded, uhm, containers, with fixed width values (value depends on container type) -->
-    <div class="container my-5">
-        <h2>normal container</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, alias. Quaerat deleniti placeat a corrupti ex iure iste, numquam consequuntur dolores praesentium, rem eos voluptas nesciunt debitis vero neque ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vitae impedit id accusamus, reiciendis doloremque explicabo porro voluptate, deleniti et maxime, perferendis recusandae nesciunt asperiores aliquid blanditiis possimus eum reprehenderit.</p>
-    </div>
-
-    <!-- this one always has 100% of page width -->
-    <div class="container-fluid">
-        <h2>fluid container</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid incidunt maxime distinctio impedit ut voluptatum. Magni quas, atque earum officia itaque, in repudiandae necessitatibus unde dolor officiis, quae laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odio iusto, quis dicta illo est dolorum. Corrupti ex non doloremque? Quis expedita totam, officiis minus autem ab? Aperiam, animi exercitationem.</p>
-    </div>
+    <!-- !! GRID ALWAYS GO INTO CONTAINER !! -->
 
     <div class="container-lg my-5">
-        <h2>100% width until lg screens, then container</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat officia, at quas dolorum exercitationem excepturi molestiae, modi reprehenderit deserunt quidem vero adipisci qui veritatis. Placeat quis eius explicabo. Quidem earum autem harum, debitis dolorum hic atque ut impedit repudiandae quas repellat provident! Ipsum dignissimos dolorum consequuntur hic at fuga totam laudantium. Fugiat eaque ad perspiciatis. Ratione magni quas quam?</p>
-    </div>
+        <h2>basic grid</h2>
+        <div class="row">
+            <!-- without div with class 'col', they would just stack on top of each other, each taking 100% row width -->
+          <div class="col">
+            <div class="p-5 bg-primary text-light">col 1</div>
+          </div>
+          <div class="col">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-lg my-5">
+        <h2>column widths</h2>
+        <div class="row">
+            <!-- without specification, they just divide the width equally. but we can determine their width by adding how many columns they should take -->
+          <div class="col-6">
+            <div class="p-5 bg-primary text-light">col 1</div>
+          </div>
+          <div class="col-3">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col-3">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-lg my-5">
+        <h2>responsive column widths</h2>
+        <div class="row gy-3"> <!-- manually change gutter using g{d}-{n} -->
 
-    <div class="container-xl my-5">
-        <h2>100% width until xl screens, then container</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quidem quia ipsa quas libero, voluptatem cum esse expedita? Assumenda beatae blanditiis commodi ipsum est, at dolores minima tempora! Veniam sunt ex reiciendis totam omnis, voluptatem sit distinctio cumque aperiam vel suscipit ullam voluptate ipsa facilis quo asperiores voluptas. Totam, corrupti possimus est veritatis explicabo qui consectetur dolorem voluptate odio quia.</p>
-    </div>
+            <!--  responsive layout depends on screen size - just like text in previous lesson. You can determine how manty columns each div takes at different screen sizes  -->
+          <div class="col-sm-4 col-lg-6">
+            <div class="p-5 bg-primary text-light">col 1</div>
+          </div>
+          <div class="col-sm-4 col-lg-3">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col-sm-4 col-lg-3">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-lg my-5">
+        <h2>justifying columns</h2>
+        <div class="row justify-content-center"><!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+          <div class="col-md-3">
+            <div class="p-5 bg-primary text-light">col 1</div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+        </div>
+      </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
