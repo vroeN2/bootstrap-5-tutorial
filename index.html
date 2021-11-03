@@ -390,6 +390,47 @@
         </div>
     </section>
 
+    <!-- get updates / modal trigger -->
+    <section class="bg-ligh">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in The Loop</h2>
+                <p class="lead">Get the latest updates as they happen...</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente. Distinctio odio magni numquam assumenda eos, sunt vel dolores qui possimus iure perspiciatis iusto doloremque saepe rerum quod voluptate nam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, ipsam recusandae odit facere dolores velit libero suscipit iusto, assumenda, qui vero tenetur provident odio alias mollitia voluptates ex nihil deserunt?</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                        Register for updates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quis nisi nulla aut suscipit nam, rerum corrupti cupiditate repellendus accusantium earum molestias sit, numquam in dolore architecto maiores atque dolor.</p>
+                    <label for="modal-email" class="form-label">Your email adress:</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
