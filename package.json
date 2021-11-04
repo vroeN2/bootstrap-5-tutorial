@@ -1,0 +1,11 @@
+{
+  "name": "bootstrap-5-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vroeN2/bootstrap-5-tutorial.git",
+  "author": "Maciej Zachariasz <47660926+vroeN2@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
